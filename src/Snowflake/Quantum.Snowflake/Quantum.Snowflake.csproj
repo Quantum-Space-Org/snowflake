@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<EnablePreviewFeatures>true</EnablePreviewFeatures>
+		<Authors>Masoud Bahrami</Authors>
+		<Company>Quantum Space Fundation</Company>
+		<Version>0.0.1</Version>
+		<PackageProjectUrl>https://github.com/Quantum-Space-Org/Core</PackageProjectUrl>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>Quantum.Snowflake.UnitTests</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Quantum.Core" Version="0.0.101" />
+	</ItemGroup>
+
+</Project>
