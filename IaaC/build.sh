@@ -7,11 +7,11 @@ CONFIG="Release"
 OUTPUT_DIR="./build"
  
 echo "🔄 Restoring dependencies..."
-dotnet restore Quantum.Snoflake.sln
+dotnet restore Quantum.Snowflake.sln
  
 echo "🔨 Building solution in $(pwd) ..."
-dotnet build Quantum.Snoflake.sln --configuration $CONFIG
+dotnet build Quantum.Snowflake.sln --configuration $CONFIG
 
 
 echo "📦 Packing..."
-dotnet pack Quantum.Snoflake.sln --configuration $CONFIG --output $OUTPUT_DIR
+dotnet pack Quantum.Snowflake.sln --configuration $CONFIG --output $OUTPUT_DIR

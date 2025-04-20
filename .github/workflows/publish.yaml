@@ -41,7 +41,7 @@ jobs:
           fi
 
       - name: 🔄 Restore dependencies
-        run: dotnet restore Quantum.Snoflake.sln
+        run: dotnet restore Quantum.Snowflake.sln
         env:
           NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
