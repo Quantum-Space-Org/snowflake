@@ -9,7 +9,7 @@ $CONFIG = "Release"
 $OUTPUT_DIR = ".\build"  # This will ensure the build folder is in the root
 
 Write-Host "🔨 Building solution in $(Get-Location) ..."
-dotnet build Quantum.EventSourcing.sln --configuration $CONFIG
+dotnet build Quantum.Snoflake.sln --configuration $CONFIG
 
 Write-Host "📦 Packing..."
-dotnet pack Quantum.EventSourcing.sln --configuration $CONFIG --output $OUTPUT_DIR
+dotnet pack Quantum.Snoflake.sln --configuration $CONFIG --output $OUTPUT_DIR
